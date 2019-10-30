@@ -1,6 +1,6 @@
 # Kenya GDC GeoNetwork
 
-## First up install docker 
+## Install docker 
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
 
@@ -8,7 +8,7 @@ Open Terminal
 
 Before you install Docker Engine - Community for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
-### SET UP THE REPOSITORY - https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository  
+### Set up the repository - https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository  
 
 1.	Update the apt package index:
 ```bash 
@@ -44,7 +44,7 @@ $ sudo add-apt-repository \
    stable"
 ```
 
-### INSTALL DOCKER ENGINE – COMMUNITY
+### Install Docker Engine CE
 
 1.	Update the apt package index.
 ```bash 
@@ -58,7 +58,7 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```bash
 $ sudo docker run hello-world
 ```
-## Install GeoNetwork - https://hub.docker.com/_/geonetwork 
+## Install GeoNetwork Container - https://hub.docker.com/_/geonetwork 
 
 1.	Pull docker container
 ```bash
@@ -89,4 +89,4 @@ $ sudo  docker start kenya-geonetwork
 $ sudo systemctl enable docker
 ```
 
-That should be it. Turn if Off/On and see what happens…..
+That should be it. Turn if Off/On to test.....
