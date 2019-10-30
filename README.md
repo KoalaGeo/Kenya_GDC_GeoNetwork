@@ -1,4 +1,4 @@
-# Kenya GDC GeoNetwork
+# Kenya GDC Internal GeoNetwork Installation
 
 ## Install docker 
 
