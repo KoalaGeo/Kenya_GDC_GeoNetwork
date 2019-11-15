@@ -93,7 +93,54 @@ $ sudo systemctl enable docker
 
 That should be it. Turn if Off/On to test.....
 
+## Legacy Data Entry into GeoNetwork Walkthrough
 
+
+### Introduction
+
+The document gives a brief guide to initialisation of GeoNetwork with Asset Register data
+It assumes an up to date functioning copy of GeoNetwork is running. 
+
+### Workflow
+
+-Convert Asset Register to Input Template
+-Map input template to ISO19139/ISO19115 tags and generate XML files for each record
+-Copy records to server (in mounted volume folder if using Docker)
+```
+/var/lib/geonetwork_data/…. 
+```
+
+Log into GeoNetwork
+![F1](F1.PNG "F1") 
+Go to Contribute > import new records 
+
+![F2](F2.PNG "F2")  
+
+![F3](F3.PNG "F3") 
+
+```
+/var/lib/geonetwork_data/data/kenxml_20191115
+```
+
+If don’t have suitable Group name available go to the Admin console and create one
+
+![F4](F4.PNG "F4") 
+
+### Thumbnails
+
+Thumbnails had to be generated and location of files added to Asset Register Input Template
+
+Installed https://www.bricelam.net/ImageResizer/
+Used as per instructions on all raster files on W: drive
+Used custom image size of maximum 600 pixels in either orientation, “fit” to maintain aspect ratio
+![F5](F5.PNG "F5")  
+Changed filename to append ”_Thumb” to original
+Files stay in original folder locations & copied to open/less secure folder "metadata" so more users with less permissions can view the thumbnails. 
+![F6](F6.PNG "F6") 
+URL of file location added as new attribute to Asset register Template worksheet, can’t use W:\ or gdcs1\ 
+MUST BE
+
+http://gdcs1.gdc.com/spatialdata/raster/geological/sketch_plans/Report%20No.7_Thumb.jpg
 
 ## Backing Up
 
