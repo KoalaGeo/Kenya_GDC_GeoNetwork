@@ -42,9 +42,10 @@ It assumes an up to date functioning copy of GeoNetwork is running.
 
 ### Workflow
 
--Convert Asset Register to Input Template
--Map input template to ISO19139/ISO19115 tags and generate XML files for each record
--Copy records to server (in mounted volume folder if using Docker)
+- Convert Asset Register to Input Template
+- Map input template to ISO19139/ISO19115 tags and generate XML files for each record
+- Copy records to server (in mounted volume folder if using Docker)
+
 ```
 /var/lib/geonetwork_data/…. 
 ```
