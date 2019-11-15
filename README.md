@@ -138,8 +138,12 @@ gdc_admin@GDCS3:~/Documents$ sudo chown gdc_admin:gdc_admin kenyagn.tar
 
 Navigate to /host/ right click on the folder "geonetwork-docker" and compress to tar.xz
 
-Copy kenyagn.tar and geonetwork-docker.tar.xz whereever required. 
+Copy kenyagn.tar and geonetwork-docker.tar.xz where ever required. 
+
+## Screen Captures
 
 ![Kenya_GeoNetwork](Screen_Capture_191115_1.PNG "Kenya GeoNetwork")
+
 ![Kenya_GeoNetwork](Screen_Capture_191115_2.PNG "Kenya GeoNetwork")
+
 ![Kenya_GeoNetwork](Screen_Capture_191115_3.PNG "Kenya GeoNetwork")
