@@ -29,7 +29,7 @@ Persisted data can be found at /host/geonetwork-docker/…..
 
 If the installation is a success, you should be able to access the following web page:
 
-![Kenya_GeoNetwork](initial.PNG "Kenya GeoNetwork")
+![GeoNetwork](initial.png "GeoNetwork")
 
 Turn if Off/On to test.....
 
