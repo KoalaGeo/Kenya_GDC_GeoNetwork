@@ -103,20 +103,47 @@ Using Docker we can commit docker container to an image. As we have a mounted vo
 
 ```bash
 gdc_admin@GDCS3:~/Documents$ sudo docker image ls
+```
+
+```bash
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 geonetwork          latest              c8d04e0920a2        3 weeks ago         812MB
 hello-world         latest              fce289e99eb9        10 months ago       1.84kB
+```
+
+```bash
 gdc_admin@GDCS3:~/Documents$ sudo docker container ls
+```
+
+```bash
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
 0ba76a0dd671        geonetwork          "/entrypoint.sh cata…"   2 weeks ago         Up 6 days           0.0.0.0:8080->8080/tcp   kenya-geonetwork
+```
+
+```bash
 gdc_admin@GDCS3:~/Documents$ sudo docker commit 0ba76a0dd671 kengn
+```
+
+```bash
 sha256:1addea4861b47963f99a38bf27e468504c3148bf36e0c92595f3e7c51e9560a5
+```
+
+```bash
 gdc_admin@GDCS3:~/Documents$ sudo docker image ls
+```
+
+```bash
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 kengn               latest              1addea4861b4        10 seconds ago      1.04GB
 geonetwork          latest              c8d04e0920a2        3 weeks ago         812MB
 hello-world         latest              fce289e99eb9        10 months ago       1.84kB
+```
+
+```bash
 gdc_admin@GDCS3:~/Documents$ sudo docker save -o /home/gdc_admin/Documents/kenyagn.tar kengn
+```
+
+```bash
 gdc_admin@GDCS3:~/Documents$ sudo chown gdc_admin:gdc_admin kenyagn.tar
 ```
 
