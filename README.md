@@ -1,5 +1,7 @@
 # Kenya GDC Internal GeoNetwork Installation
 
+![Kenya_GeoNetwork](Screen_Capture_191115.PNG "Kenya GeoNetwork")
+
 ## Install docker 
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
