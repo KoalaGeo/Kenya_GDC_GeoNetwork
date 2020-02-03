@@ -1,3 +1,22 @@
+# Using GeoNetwork 
+
+When you first load GeoNetwork the thumbnails/images will not be shown as these are hosted on a secure server. 
+
+Therefore to see these you need to log on to that system via GeoNetwork. 
+
+Open any record which is owned by the GDC which has a map associated with it such as:
+
+http://10.121.22.252:8080/geonetwork/srv/eng/catalog.search#/metadata/d240dbbd-66f9-47e6-919b-0a42a7060c65
+
+Click on the “Open Link” button in the Downloads and Links section. 
+
+A popup window will ask for your login details, please complete using your normal windows login credentials. The requested map will then open in the browser. 
+
+Return to the GeoNetwork home page and hit refresh in your browser
+
+All thumbnails should now be visible. 
+
+
 # Kenya GDC Internal GeoNetwork Installation
 
 ![Kenya_GeoNetwork](Screen_Capture_191115.PNG "Kenya GeoNetwork")
