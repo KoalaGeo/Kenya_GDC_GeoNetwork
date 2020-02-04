@@ -201,3 +201,8 @@ kengn2
 Backing up volume 
 
 https://blog.ssdnodes.com/blog/docker-backup-volumes/ 
+
+```
+sudo docker run --rm --volumes-from kengn2 -v ~/backup:/backup ubuntu bash -c "cd /var/lib/geonetwork_data && tar cvf /backup/kenya-data.tar ."
+```
+
