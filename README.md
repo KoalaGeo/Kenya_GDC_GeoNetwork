@@ -196,3 +196,8 @@ edd@edd-VirtualBox:~$ sudo docker stop kengn2
 kengn2
 edd@edd-VirtualBox:~$ sudo docker start kengn2
 kengn2
+
+
+Backing up volume 
+
+https://blog.ssdnodes.com/blog/docker-backup-volumes/ 
