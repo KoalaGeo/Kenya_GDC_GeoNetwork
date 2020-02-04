@@ -166,3 +166,33 @@ Copy kenyagn.tar and geonetwork-docker.tar.xz where ever required.
 ![Kenya_GeoNetwork](Screen_Capture_191115_2.PNG "Kenya GeoNetwork")
 
 ![Kenya_GeoNetwork](Screen_Capture_191115_3.PNG "Kenya GeoNetwork")
+
+## Moving from Mounts to Volumes
+
+https://stackoverflow.com/questions/49888014/move-docker-bind-mount-to-volume
+
+Copy existing mounted folder only a created volume in a docker container
+
+edd@edd-VirtualBox:~$ sodo docker run --name kengn2 -d -p 8081:8080 -e DATA_DIR=/var/lib/geonetwork_data -v kenya-data:/var/lib/geonetwork_data kengn
+
+Command 'sodo' not found, did you mean:
+
+  command 'nodo' from snap nodo (master)
+  command 'todo' from deb devtodo
+  command 'sudo' from deb sudo
+  command 'sudo' from deb sudo-ldap
+
+See 'snap info <snapname>' for additional versions.
+
+edd@edd-VirtualBox:~$ sudo docker run --name kengn2 -d -p 8081:8080 -e DATA_DIR=/var/lib/geonetwork_data -v kenya-data:/var/lib/geonetwork_data kengn
+33ab148b4dedbeeb5bde95aaf12c0c15e2f78b212ead44423aeeee344fe9847e
+edd@edd-VirtualBox:~$ sudo docker stop kenyagn
+kenyagn
+edd@edd-VirtualBox:~$ sudo docker copy /host/geonetwork-docker kengn2:kenya-data
+docker: 'copy' is not a docker command.
+See 'docker --help'
+edd@edd-VirtualBox:~$ sudo docker cp /host/geonetwork-docker kengn2:kenya-data
+edd@edd-VirtualBox:~$ sudo docker stop kengn2
+kengn2
+edd@edd-VirtualBox:~$ sudo docker start kengn2
+kengn2
