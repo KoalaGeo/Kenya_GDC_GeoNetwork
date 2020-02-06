@@ -1,0 +1,23 @@
+# GeoNetwork
+#
+# Access via "http://localhost:8080/geonetwork" (or "http://$(docker-machine ip):8080/geonetwork" if using docker-machine)
+#
+# Default user: admin
+# Default password: admin
+
+version: '3.10'
+services:
+
+  geonetwork:
+    container_name: kenya_geonetwork
+    image: geonetwork
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      DATA_DIR: /var/lib/geonetwork_data
+    volumes:
+      - kenya-data:/var/lib/geonetwork_data
+
+volumes:
+  kenya-data:
